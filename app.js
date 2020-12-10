@@ -56,8 +56,8 @@ const loading = async function(doc){
         const crash = doc.querySelector("figure.bsd");
         console.log(crash);
         document.body.appendChild(crash);
-        setTimeout(() => location.reload(), 20000);
-        window.close();
+        setTimeout(() => window.close(), 4000);
+        
     }, crash_time);
     
     
