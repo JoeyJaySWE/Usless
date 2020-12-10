@@ -1,3 +1,24 @@
+:root{
+    --tic-color: linear-gradient(180deg, rgba(187,238,188,1) 0%,
+    rgba(60,214,64,1) 25%, 
+    rgba(60,214,64,1) 75%, 
+    rgba(187,238,188,1) 100%);
+
+    --window-title-color: linear-gradient(180deg, rgba(47,134,249,1) 0%,
+    rgba(0,84,227,1) 25%,
+    rgba(15,100,234,1)75%,
+    rgba(47,134,249,1) 100%);
+
+    --popup-bg: #ECE9D8;
+
+    --popup-border:3px solid #406BDD;
+
+    --popup-loading-border:1px solid lightgray;
+
+    --popup-btn-border: 2px solid #9EBCEB;
+
+    --bsd-bg:#0100AC;
+}
 @font-face{
     font-family: Tahoma;
     src: 
@@ -56,8 +77,8 @@ figure>img{
     z-index: 4;
     top: -880px;
     margin: auto;
-    background-color: #ECE9D8;
-    border: 3px solid #406BDD;
+    background-color: var(--popup-bg);
+    border: var(--popup-border);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 280px;
@@ -72,10 +93,7 @@ figure>img{
     margin: 0px;
     font-weight: 400;
     color: #FFF;
-    background: linear-gradient(180deg, rgba(47,134,249,1) 0%,
-                                        rgba(0,84,227,1) 25%,
-                                        rgba(15,100,234,1)75%,
-                                        rgba(47,134,249,1) 100%);
+    background: var(--window-title-color);
     padding: 10px;    
 
 }
@@ -103,7 +121,7 @@ figure>img{
     height:30px;
     width: 80%;
     background-color:#fff;
-    border:1px solid lightgray;
+    border: var(--popup-loading-border);
     border-radius: 5px;
     margin-right: 10px;
     display: flex;
@@ -115,14 +133,11 @@ figure>img{
     height:95%;
     width:5.1%;
     margin-left: 2px;
-    background: linear-gradient(180deg, rgba(187,238,188,1) 0%,
-                                        rgba(60,214,64,1) 25%, 
-                                        rgba(60,214,64,1) 75%, 
-                                        rgba(187,238,188,1) 100%);
+    background: var(--tic-color);
 }
 .pop_up button{
     border-radius: 5px;
-    border:2px solid #9EBCEB;
+    border:var(--popup-btn-border);
 }
 .pop_up time{
     padding: 10px;
@@ -134,7 +149,7 @@ figure.bsd{
     left:0;
     height: 100vh;
     width: 100vw;
-    background-color:#0100AC;
+    background-color:var(--bsd-bg);
     z-index:6;
     margin:0px;
 }
