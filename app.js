@@ -156,9 +156,7 @@ setTimeout(function(){
                 deletePage();
             }
             else{
-                trash.style.transform = "scale(1)";
-                trash.style.top = "0";
-                trash.style.left = "0";
+                location.reload();
             }
         }
     });
