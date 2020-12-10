@@ -56,7 +56,7 @@ const loading = async function(doc){
         const crash = doc.querySelector("figure.bsd");
         console.log(crash);
         document.body.appendChild(crash);
-        setTimeout(() => window.close(), 4000);
+        setTimeout(() => window.close(), 6000);
         
     }, crash_time);
     
@@ -149,7 +149,7 @@ setTimeout(function(){
         console.log("Top Trash: "+(trash.offsetTop+217)+" Bin: "+bin_top+" Calc: "+(bin_top+bin_height));
         console.log("Top Trash: "+(trash.offsetTop+180)+" Bin: "+bin_left+" Calc: "+(bin_left+bin_width));
         if((trash.offsetLeft+(window.innerWidth/2)) > bin_left && (trash.offsetLeft+(window.innerWidth/2)) < (bin_left+bin_width)
-        && (trash.offsetTop+217) > bin_top && trash.offsetTop < (bin_top+bin_height)){
+        && (trash.offsetTop+(window.innerHeight/2)) > bin_top && trash.offsetTop < (bin_top+bin_height)){
             let descision = confirm("Are you sure you want to throw away this hard working page?");
 
             if(descision === true){
