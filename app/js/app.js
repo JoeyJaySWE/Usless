@@ -77,8 +77,13 @@ setTimeout(function () {
 
   page.addEventListener("click", function (e) {
     if (ball === false) {
-      trash.style.transform =
-        "scale(0.02)"; /* TODO Find out a solution to size with the drag falling off*/
+      if(window.innerWidth > 600){
+        trash.style.transform =
+          "scale(0.02)"; 
+      }
+      else{
+        trash.style.transform = "scale(0.2)";
+      }
       trash.style.borderRadius = "100%";
       ball = true;
     }
