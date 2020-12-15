@@ -1,5 +1,7 @@
 # Useless Page
 
+<a href="https://uselessjs.netlify.app/" target="_Blank">Useless Page</a>
+
 <h2>Description:</h2>
 So for this assignment I've been tasked to make a useless page.
 So I decided to do something that was the only thing I could find fitting for such a place, throw it in the Bin.
