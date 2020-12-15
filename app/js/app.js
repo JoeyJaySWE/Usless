@@ -95,7 +95,7 @@ setTimeout(function () {
     startX = e.clientX;
     startY = e.clientY;
     page.style.top = "-200px";
-    page.addEventListener("mousemove", function mouseMove(e) {
+    page.addEventListener("ondrag", function mouseMove(e) {
       posX = startX - e.clientX;
       posY = startY - e.clientY;
       startX = e.clientX;
